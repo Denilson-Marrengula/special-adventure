@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario pessoal</title>
+</head>
+<body>
+    <header>
+        <h1>Diario Pessoal</h1>
+        <p>Um espaço simples para suas reflex&es diárias</p>
+        <p><a href="index.html">Voltar à Página Inicial</a></p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#escrever">Criar texto</a></li>
+            <li><a href="#ver">Ver texto</a></li>
+            <li><a href="login.html">Sair</a></li>
+            <li></li>
+            
+        </ul>
+    </nav>
+
+    <hr>
+    <main>
+    <section id="escrever">
+        <h2>Escreva sobre seu dia</h2>
+        <form method="POST" action="../processar-post.php">
+            <div>
+                <label for="entry-title">Título:</label>
+                
+                <input type="text" id="entry-title" name="entry-title" required>
+            </div>
+            <div>
+                
+                <label for="entry-content">Conteúdo:</label><br>
+                <textarea id="entry-content" name="entry-content" rows="10" cols="50" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Salvar Entrada</button>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <section id="ver">
+        <h2>Suas Entradas Anteriores</h2>
+        <p>Aqui você verá suas entradas anteriores (funcionalidade futura).</p>
+    </section>
+    </main>
+    <hr>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Quicksand", sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #0a0a0a;
+      overflow: hidden;
+    }
+    
+    .register {
+      position: relative;
+      width: 340px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      box-shadow: 0 0 15px rgba(74, 73, 73, 0.6);
+    }
+    .register h2 {
+      font-size: 2em;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+    }
+    .register .inputBx {
+      width: 100%;
+    }
+    .register .inputBx input {
+      width: 100%;
+      padding: 15px 20px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 40px;
+      font-size: 1em;
+      color: #fff;
+      outline: none;
+      transition: 0.3s;
+    }
+    .register .inputBx input:focus {
+      border-color: #4800ff;
+      box-shadow: 0 0 8px #0011ff;
+    }
+    .register .inputBx input[type="submit"] {
+      background: linear-gradient(45deg, #0078ff, #8a2be2);
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+    .register .inputBx input[type="submit"]:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px rgba(73, 43, 226, 0.7);
+    }
+    .register .inputBx input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .register .links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 0.9em;
+    }
+    .register .links a {
+      color: #00ff88;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .register .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register">
+    <h2>Sign up</h2>
+    <div class="inputBx">
+      <input type="text" placeholder="Username">
+    </div>
+    <div class="inputBx">
+      <input type="email" placeholder="E-mail">
+    </div>
+    <div class="inputBx">
+      <input type="password" placeholder="Senha">
+    </div>
+    <div class="inputBx">
+      <input type="password" placeholder="Confirmar Senha">
+    </div>
+    <div class="inputBx">
+      <input type="submit" value="Registrar">
+    </div>
+    <div class="links">
+      <a href="login.html">Já tem conta? Entrar</a>
+    </div>
+  </div>
+
+</body>
+</html>
